@@ -3,25 +3,24 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 
-// Your web app's Firebase configuration is now securely loaded from environment variables.
-// This code now uses the correct Next.js syntax: `process.env.NEXT_PUBLIC_...`
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyBoTjMzT8fIif2Abg_Ug9O6tVeq8tccSr4",
+  authDomain: "jalsuraksha-fea77.firebaseapp.com",
+  projectId: "jalsuraksha-fea77",
+  storageBucket: "jalsuraksha-fea77.appspot.com",
+  messagingSenderId: "420932073711",
+  appId: "1:420932073711:web:6d1e167680cad30959c31a",
+  measurementId: "G-DQ83Y25WQW"
 };
 
 
-// Initialize Firebase - This part stays the same
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// Enable offline persistence - This part stays the same
+// Enable offline persistence
 enableIndexedDbPersistence(db)
   .catch((err) => {
     if (err.code == 'failed-precondition') {
@@ -37,4 +36,3 @@ enableIndexedDbPersistence(db)
 
 
 export { db, auth };
-
