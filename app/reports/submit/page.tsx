@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useContext } from "react";
-import { useForm, type SubmitHandler, Controller } from "react-hook-form";
+import { useForm, type SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import {
@@ -9,7 +9,7 @@ import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar";
-import { DashboardNav } from "@/components/dashboard-nav";
+import { DashboardNav } from "../../components/dashboard-nav";
 import {
   Card,
   CardContent,
@@ -23,7 +23,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -39,10 +38,10 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, Send } from "lucide-react";
-import { RecentReportsTable, type Report } from "@/components/recent-reports-table";
-import { ReportsContext } from "@/context/ReportsContext";
-import { AppHeader } from "@/components/app-header";
-import { useI18n } from "@/context/I18nContext";
+import { RecentReportsTable, type Report } from "../../components/recent-reports-table";
+import { ReportsContext } from "../../context/ReportsContext";
+import { AppHeader } from "../../components/app-header";
+import { useI18n } from "../../context/I18nContext";
 
 const villages = ["Jalsuraksha", "Pawanpur", "Agnigiri", "Vidyutgram", "Barpeta"];
 const allSymptoms = ["fever", "diarrhea", "vomiting", "headache", "rashes"];
@@ -109,7 +108,7 @@ export default function SubmitReportPage() {
         description: "There was a problem with your report submission.",
       });
     } finally {
-        setIsLoading(false);
+       setIsLoading(false);
     }
   };
 
@@ -305,7 +304,7 @@ export default function SubmitReportPage() {
                   <CardHeader>
                     <CardTitle>{t('recentSubmissions')}</CardTitle>
                      <CardDescription>
-                      {t('recentSubmissionsDescription')}
+                       {t('recentSubmissionsDescription')}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -320,3 +319,4 @@ export default function SubmitReportPage() {
     </SidebarProvider>
   );
 }
+
