@@ -3,15 +3,16 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration is now loaded from secure environment variables
+// This code is now safe to commit to GitHub.
 const firebaseConfig = {
-  apiKey: "AIzaSyBoTjMzT8fIif2Abg_Ug9O6tVeq8tccSr4",
-  authDomain: "jalsuraksha-fea77.firebaseapp.com",
-  projectId: "jalsuraksha-fea77",
-  storageBucket: "jalsuraksha-fea77.appspot.com",
-  messagingSenderId: "420932073711",
-  appId: "1:420932073711:web:6d1e167680cad30959c31a",
-  measurementId: "G-DQ83Y25WQW"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 
