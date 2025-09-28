@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "map-hotspot",
+      "description": "A heatmap of a geographical area showing report hotspots.",
+      "imageUrl": "https://images.unsplash.com/photo-1687294782370-5ae92f081c47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXAlMjBoZWF0bWFwfGVufDB8fHx8MTc1ODgwNzk3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map heatmap"
+    },
+    {
+      "id": "safe-drinking-water",
+      "description": "A person pouring clean water from a jug into a glass.",
+      "imageUrl": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGVhbiUyMHdhdGVyfGVufDB8fHx8MTc1ODgzMDgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clean water"
+    },
+    {
+      "id": "health-worker-community",
+      "description": "A health worker talking to a group of people in a village.",
+      "imageUrl": "https://images.unsplash.com/photo-1601273399319-cb0a8bb73713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoZWFsdGglMjBjb21tdW5pdHl8ZW58MHx8fHwxNzU4ODg5NzgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "health community"
+    },
+    {
+      "id": "hand-washing",
+      "description": "A person washing their hands with soap and water.",
+      "imageUrl": "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYW5kJTIwd2FzaGluZ3xlbnwwfHx8fDE3NTg4NzYwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hand washing"
+    }
+  ]
+}
